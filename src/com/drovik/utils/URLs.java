@@ -13,4 +13,9 @@ public class URLs {
 		String URL_API_HOST = security?HTTPS:HTTP + HOST + URL_SPLITTER;
 		return URL_API_HOST+"apk_down_load" + URL_SPLITTER + subFold + URL_SPLITTER + "AppVersion.xml";
 	}
+	
+	public final static String makeUrl(boolean security, String subFold, String des) {
+		String URL_API_HOST = security?HTTPS:HTTP + HOST + URL_SPLITTER;
+		return URL_API_HOST+"apk_down_load" + URL_SPLITTER + subFold + URL_SPLITTER + des;
+	}
 }
